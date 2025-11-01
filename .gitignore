@@ -1,0 +1,7 @@
+# Safe mirror – include only essential deployment files
+*
+!backend.Dockerfile
+!frontend.Dockerfile
+!manage_dockers.sh
+!README.md
+!.gitignore
