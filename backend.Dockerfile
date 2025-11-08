@@ -16,7 +16,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Étape 6 : Copier le code source de l’application
-COPY app/ ./app
+# COPY app/ ./app
+COPY . .
+
+
 
 # Étape 7 : Créer le dossier de sortie
 RUN mkdir -p /app/generated
